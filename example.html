@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example</title>
+    <link href="public/css/bootstrap.css" rel="stylesheet" />
+    <script src="public/js/jquery-1.10.2.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/url_json.js"></script>
+
+</head>
+<body>
+<div class='panel panel-default' id='filter'>
+    <div class='panel-heading'>
+        <div class='dl-horizontal filter-dl filter-radio'>
+            <dt>
+                <span>channel</span>
+            <dd >
+                <a class='label label-blank' href='javascript:{}' onclick="URL_JSON_RELATION.mark_me_selected(this)">all</a>
+                <a class='label label-blank' href='javascript:{}' onclick="URL_JSON_RELATION.mark_me_selected(this)">import</a>
+                <a class='label label-blank' href='javascript:{}' onclick="URL_JSON_RELATION.mark_me_selected(this)">not_import</a>
+            </dd>
+            </dt>
+        </div>
+        <div class='dl-horizontal filter-dl filter-radio'>
+            <dt>
+                <span>bind</span>
+            <dd>
+                <a class='label label-blank' href='javascript:{}' onclick="URL_JSON_RELATION.mark_me_selected(this)">all</a>
+                <a class='label label-blank' href='javascript:{}' onclick="URL_JSON_RELATION.mark_me_selected(this)">not_bind</a>
+                <a class='label label-blank' href='javascript:{}' onclick="URL_JSON_RELATION.mark_me_selected(this)">binded</a>
+            </dd>
+            </dt>
+        </div>
+        <div class='dl-horizontal filter-dl filter-radio'>
+            <dt>
+                <span>1111</span>
+            <dd id='1111'>
+                <a class='label label-blank' href='javascript:{}' id='1111=全部' onclick="URL_JSON_RELATION.mark_me_selected(this)">all</a>
+                <a class='label label-blank' href='javascript:{}' id='1111=1111 a' onclick="URL_JSON_RELATION.mark_me_selected(this)">1111_a</a>
+                <a class='label label-blank' href='javascript:{}' id='1111=1111 b' onclick="URL_JSON_RELATION.mark_me_selected(this)">1111_b</a>
+                <a class='label label-blank' href='javascript:{}' id='1111=1111 c' onclick="URL_JSON_RELATION.mark_me_selected(this)">1111_c</a>
+                <a class='label label-blank' href='javascript:{}' id='1111=1111 d' onclick="URL_JSON_RELATION.mark_me_selected(this)">1111_d</a>
+            </dd>
+            </dt>
+        </div>
+        <div class='dl-horizontal filter-dl filter-radio'>
+            <dt>
+                <span>2222</span>
+            <dd id='2222'>
+                <a class='label label-blank' href='javascript:{}' id='2222=全部' onclick="URL_JSON_RELATION.mark_me_selected(this)">all</a>
+                <a class='label label-blank' href='javascript:{}' id='2222=2222 a' onclick="URL_JSON_RELATION.mark_me_selected(this)">2222_a</a>
+                <a class='label label-blank' href='javascript:{}' id='2222=2222 b' onclick="URL_JSON_RELATION.mark_me_selected(this)">2222_b</a>
+                <a class='label label-blank' href='javascript:{}' id='2222=2222 c' onclick="URL_JSON_RELATION.mark_me_selected(this)">2222_c</a>
+                <a class='label label-blank' href='javascript:{}' id='2222=2222 d' onclick="URL_JSON_RELATION.mark_me_selected(this)">2222_d</a>
+            </dd>
+            </dt>
+        </div>
+        <div class='dl-horizontal filter-dl filter-radio'>
+            <dt>
+                <span>ss</span>
+            <dd id='ss'>
+                <a class='label label-blank' href='javascript:{}' id='ss=全部' onclick="URL_JSON_RELATION.mark_me_selected(this)">all</a>
+                <a class='label label-blank' href='javascript:{}' id='ss=ssss1' onclick="URL_JSON_RELATION.mark_me_selected(this)">ssss1</a>
+                <a class='label label-blank' href='javascript:{}' id='ss=ssss2' onclick="URL_JSON_RELATION.mark_me_selected(this)">ssss2</a>
+                <a class='label label-blank' href='javascript:{}' id='ss=ssss3' onclick="URL_JSON_RELATION.mark_me_selected(this)">ssss3</a>
+            </dd>
+            </dt>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        URL_JSON_RELATION.init_filter_btn_base_url();
+    });
+</script>
+</body>
+</html>
